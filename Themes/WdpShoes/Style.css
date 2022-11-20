@@ -33,7 +33,7 @@ HEADER
     display: flex;
     align-items:center;
     color: #fff;
-    padding: 0 10px;
+    padding: 0 10px;/*0 CIMA E BAIXO. 10 DIREITA ESQUERDA*/
 }
 
 /*
@@ -60,7 +60,7 @@ SEARCH
 .main_header_nav_search form{
     background: #fff;
     display: flex;
-    overflow: hidden;
+    overflow: hidden;/*NÁO DEIXA QUE NADA SAIA PARA FORA DA ESTRUTURA*/
 }
 
 .main_header_nav_search input{
@@ -94,7 +94,7 @@ MENU
 }
 
 .main_header_nav_menu div{
-    margin-left: 15px;    
+    margin-left: 15px; /*SEPARA O MENU DO CARRINHO*/   
 }
 
 .main_header_nav_menu_cart,
@@ -103,8 +103,12 @@ MENU
     text-decoration: none;
 }
 
+.main_header_nav_menu_user{
+    position: relative;
+}
+
 .main_header_nav_menu_cart span{
-    position: absolute;
+    position: relative;
     right: calc(100% + 5px);
     top: -5px;
     font-size: 0.8em;
@@ -127,7 +131,7 @@ MENU
 .main_header_nav_menu_user:hover .main_header_nav_menu_user_a,
 .main_header_nav_menu_user_a:hover{
     background: #fff;
-    text-decoration: nene;
+    text-decoration: none;
     color: #000;
 }
 
