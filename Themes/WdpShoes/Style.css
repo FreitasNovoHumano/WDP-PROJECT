@@ -14,7 +14,7 @@
 }
 
 .container{
-    padding: 50px 10px; /*CONTROLANDO PADRÃO DE ESPAÇAMENTO ENTRE OS CONTAINER*/
+    padding: 50px 10px; /*CONTROLANDO PADRÃO DE ESPAÇAMENTO ENTRE OS CONTAINER 50 CIMA E BAIXO, 10 DIREITA ESQUERDA*/
 }
 
 /*
@@ -31,7 +31,7 @@ HEADER
 
 .main_header_nav{
     display: flex;
-    align-items:center;
+    align-items: center;
     color: #fff;
     padding: 0 10px;/*0 CIMA E BAIXO. 10 DIREITA ESQUERDA*/
 }
@@ -136,6 +136,7 @@ MENU
 }
 
 .main_header_nav_menu_user nav{
+    z-index: 3;
     position: absolute;
     border: 1px solid #fff;
     text-align: left;
@@ -160,37 +161,70 @@ MENU
 }
 
 .main_header_nav_menu_user:hover nav{
-    display: block;
+    display: block; /*APRESENTA O SUBMENU AO PASSAR O MOUSE*/
 }
 
 /*
 DEPARTMENTS
 */
 .main_header_departments{
-    display: flex;
+    display: block;
     width: 100%;
     margin-top: 25px;
     padding-bottom: 5px;
     color: #fff;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /*DIVIDE OS ESPAÇOS ENTRE OS ELEMENTOS*/
 }
 
+.main_header_departments_li{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+}
 
+.main_header_departments_li:hover{
+    background: #fff;
+    color: #333;
+}
 
+.main_header_departments_li_ul{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 100%;
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    color: #333;
+    background: #fff;
+     border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    display: none;
+}
 
+.main_header_departments_li:hover .main_header_departments_li_ul{
+    display: block;    
+}
 
+.main_header_departments_li_ul_li,
+.main_header_departments_li_ul_li a{
+    text-transform: none;
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    color: #333;
+    margin-top: 5px;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main_header_departments_li_ul_li a:hover{
+    text-decoration: underline;
+}

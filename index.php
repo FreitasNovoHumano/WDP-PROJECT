@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 
-               
+                <!-- LOOP DE PHP CRIANDO UM E REPLICANDO. SE MEXER EM UM ALTERA TODOS OS DEPARTAMENTOS  -->
                 <ul class="main_header_departments">
                     <?php
                     for ($i = 1; $i < 6; $i++) {
@@ -54,7 +54,7 @@
                                 <?php
                                 for ($ii = 1; $ii < 6; $ii++) {
                                     ?>
-                                    <li class="main_header_departments_li_ul_li"><a title="" href="#">Categoria <?php "{$i}/{$ii}"; ?></a></li>
+                                    <li class="main_header_departments_li_ul_li"><a title="" href="#">Categoria <?= "{$i}/{$ii}"; ?></a></li>
                                     <?php
                                 }
                                 ?>
