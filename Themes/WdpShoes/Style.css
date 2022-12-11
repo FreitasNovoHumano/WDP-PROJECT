@@ -495,4 +495,113 @@ BLOG
     background: var(--themeColorA_h);
 }
 
+/*
+RESPONSIVIDADE
+*/
+@media(max-width: 52em){
+    .main_header .container{
+        padding: 20px;
+    }
+    
+    .main_header_nav{
+        flex-wrap: wrap;
+    }
+    
+    .main_header_nav_search{
+        flex-basis: 100%;
+        padding: 0;
+        order: 1;
+        margin-top: 30px;        
+    }
+    
+    .main_header_nav_log,
+    .main_header_nav_menu{
+        flex-basis: 50%;
+    }
+    
+    .main_header_departments{
+        display: none;
+    }
+    
+    .pdt_gallery_featured,
+    .pdt_gallery_list{
+        flex-basis: 100%;
+    }
+    
+    .pdt_gallery_normalize .pdt_gallery_item{
+        flex-basis: calc(50% - 40px);
+        margin: 20px;
+    }
+    
+    .blog_gallery .blog_gallery_item{
+        flex-basis: calc(50% - 40px);
+        margin: 20px;
+    }
+    
+    .blog_gallery .blog_gallery_item:nth-child(n+5){
+        display: none;
+    }
+    
+    .main_footer_nav_pays .flex-4{
+        flex-basis: calc(33.33% - 10px);
+        margin: 5px;
+    }
+}
 
+@media(max-width: 42em){
+    .main_footer_nav > .flex-4{
+        flex-basis: calc(50% - 40px);
+        margin: 20px;
+    }
+}
+
+@media(max-width: 32em){
+    .pdt_gallery_banner,
+    .main_content_slide{
+        display: none;
+    }
+    
+    .pdt_gallery .pdt_gallery_item{
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+        font-size: 1.3em;
+    }
+    
+    .pdt_gallery_featured{
+        font-size: 1.1em;
+    }
+    
+    .blog_gallery .blog_gallery_item{
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+    
+    .blog_gallery .blog_gallery_item:nth-child(n+3){
+        display: none;
+    }
+    
+    .main_footer_optin{
+        font-size: 0.8em;
+    }
+    
+    .main_footer_bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .main_footer_bottom_copy,
+    .main_footer_bottom_social{
+        flex-basis: 100%;
+        text-align: center;
+        padding: 0 10%;
+    }
+    
+    .main_footer_bottom_copy img{
+        margin: 0 auto 10px auto;
+    }
+    
+    .main_footer_bottom_social{
+        margin-top: 20px;
+        font-size: 1.8em;
+    }   
+}
