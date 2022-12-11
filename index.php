@@ -307,5 +307,8 @@
                 </div>                
             </div>
         </footer>
+        
+        <script src="Assets/jquery.js"></script>
+        <script src="Assets/script.js"></script>
     </body>
 </html>
