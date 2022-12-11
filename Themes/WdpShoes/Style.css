@@ -352,4 +352,73 @@ FOOTER
     color: var(--themeColorA_h);    
 }
 
+/*
+PDT_GALLERY
+*/
+.pdt_gallery img{
+    width: 100%;
+}
+
+.pdt_gallery_list{
+    flex-basis: 50%;
+}
+
+.pdt_gallery_featured{
+    font-size: 2em;
+}
+
+.pdt_gallery_item{
+    position: relative;
+}
+
+.pdt_gallery_item_desc{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.pdt_gallery_item_desc_title{
+    display: inline;
+    font-size: 1.1em;
+}
+
+.pdt_gallery_item_desc_title a{
+    background: var(--themeColorA);
+    color: #fff;
+    text-decoration: none;
+}
+
+.pdt_gallery_item_desc_title a:hover{
+    background: var(--themeColorA_h);
+}
+
+.pdt_gallery_item_desc p{
+    display: inline;
+    background: rgba(255, 255, 255, 0.7);
+    color: #777;
+    font-size: 0.875em;
+}
+
+.pdt_gallery_item_desc_price{
+    margin-top: 5px;
+    display: block;
+}
+
+.pdt_gallery_item_desc_price p{
+    color: #333;
+    font-size: 1em;
+}
+
+.pdt_gallery_item_desc_price span{
+    text-decoration: line-through; /*CORTA O PREÇO*/
+    color: #888;
+}
+
+.pdt_gallery_normalize .pdt_gallery_item{
+    flex-basis: calc(25% - 40px);
+    margin: 20px;
+}
+
 

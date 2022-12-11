@@ -49,6 +49,7 @@ a:hover{
 */
 
 img{
+    display: block; /*TIRA O SPAÇAMENTO DO SLIDE*/
     max-width: 100%;
 }
 
