@@ -72,7 +72,7 @@
                 <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-01.jpg" alt="" title=""/></a>
                 <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-02.jpg" alt="" title=""/></a>
                 <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-03.jpg" alt="" title=""/></a> 
-                <div class="j_slide_nav"></div>
+                <div class="j_slide_nav"></div> <!-- NATIVAÇÃO DE PLUGNIS -->
             </div>
             
             <section class="pdt_gallery">
@@ -221,6 +221,31 @@
                         </div>                        
                     </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="blog_gallery">
+                <div class="container">
+                    <header class="main_content_header">
+                        <h1 class="main_content_header_title">Blog</h1>
+                    </header>
+                    
+                    <div class="flex">
+                        <?php
+                        for ($b = 1; $b < 7; $b++){
+                        ?>
+                        <article class="blog_gallery_item transition flex-3">
+                            <a href="#" title="">
+                                <img alt="" title="" src="Uploads/blog/<?= str_pad($b, 2, 0, STR_PAD_LEFT);?>.jpg"/>
+                            </a>
+                            <header>
+                                <h2><a title="" href="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></h2>
+                            </header>
+                        </article>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
             </section>

@@ -350,7 +350,7 @@ SLIDE
     display: none;
 }
 
-.j_tabs_item:first-child{
+.j_slide_item:first-child{
     display: block;
 }
 
@@ -361,7 +361,6 @@ SLIDE
     margin-bottom: 10px;
     width: 100%;
     text-align: center;
-    background: red;
 }
 
 .j_slide_nav span{
@@ -378,4 +377,17 @@ SLIDE
     background: var(--themeColorA_h);
 }
 
-/*TABS*/
+/*
+TABS
+*/
+.j_tabs_nav.active{
+    background: var(--themeColorA);
+}
+
+.j_tabs_item{
+    display: none;
+}
+
+.j_tabs_item:first-child{
+    display: block;
+}

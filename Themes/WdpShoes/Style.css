@@ -450,26 +450,49 @@ PDT SEGMENT
     max-width: 40%;
 }
 
+/*
+BLOG
+*/
+.blog_gallery{
+    background: #000;
+}
 
+.blog_gallery .main_content_header_title{
+    color: var(--themeColorA);
+    border-color: var(--themeColorA);
+}
 
+.blog_gallery_item{
+    position: relative;
+    border: 3px solid var(--themeColorA);
+}
 
+.blog_gallery_item:hover{
+    border-color: var(--themeColorA_h);
+}
 
+.blog_gallery_item header{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
 
+.blog_gallery_item header h2{
+    display: inline;
+    font-size: 1.2em;
+}
 
+.blog_gallery_item header a{
+    color: #fff;
+    background: var(--themeColorA);
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.blog_gallery_item:hover a,
+.blog_gallery_item header a:hover{
+    background: var(--themeColorA_h);
+}
 
 
