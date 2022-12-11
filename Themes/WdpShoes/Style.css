@@ -104,7 +104,7 @@ MENU
 }
 
 .main_header_nav_menu_user{
-    position: relative;
+    position: absolute;
 }
 
 .main_header_nav_menu_cart span{
@@ -420,5 +420,56 @@ PDT_GALLERY
     flex-basis: calc(25% - 40px);
     margin: 20px;
 }
+
+/*
+PDT SEGMENT
+*/
+.pdt_select{
+    background: #fbfbfb;
+}
+
+.pdt_select_header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pdt_select_header h1{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.pdt_select_header span{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 4px 12px;
+    background: #666;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    max-width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -68,13 +68,13 @@
         </header>        
         
         <main class="main_content">
-            <div class="main_content_slide j_slide"><!<!-- CLASS J_SLIDE É PARA UTILIZAR NO JQUERY -->
-               <!-- <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-01.jpg" alt="" title=""/></a> -->
+            <div class="main_content_slide j_slide"> <!-- CLASS J_SLIDE É PARA UTILIZAR NO JQUERY -->
+                <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-01.jpg" alt="" title=""/></a>
                 <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-02.jpg" alt="" title=""/></a>
-               <!-- <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-03.jpg" alt="" title=""/></a> -->
+                <a class="j_slide_item" href="#" title=""><img src="Uploads/featured-03.jpg" alt="" title=""/></a> 
                 <div class="j_slide_nav"></div>
-
             </div>
+            
             <section class="pdt_gallery">
                 <div class="container">
                     <header class="main_content_header">
@@ -138,6 +138,90 @@
                             }
                             ?>                            
                         </div>
+                </div>
+            </section>
+            
+            <section class="pdt_gallery pdt_select">
+                <div class="container">
+                    <header class="pdt_select_header">
+                        <h1><span class="j_tabs_nav transition radius">Eles</span><span class="j_tabs_nav transition radius">Elas</span></h1>
+                    </header>
+                    
+                    <div class="j_tabs">
+                        <div class="j_tabs_item">
+                            <div class="flex">
+                        <div class="pdt_gallery_list pdt_gallery_featured">
+                            <article class="pdt_gallery_item flex-2"> <!-- FLEX-2 SIGNIFICA 2 LINHAS COM 2 ELEMENTOS -->
+                                <a href="#" title=""><img alt="" title="" src="Uploads/products/15.jpg"/></a>
+                                <header class="pdt_gallery_item_desc">
+                                    <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="Calça Moletom Cofort Mama Latina">Calça Moletom Cofort Mama Latina</a></h2>
+                                    <div class="pdt_gallery_item_desc_price">
+                                        <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                    </div>
+                                    <p>2x R$ 29,95</p>
+                                </header>                                
+                            </article>                            
+                        </div>
+                        <div class="pdt_gallery_list flex">
+                            <?php
+                            $pdt = 0;
+                            for ($pdt = 11; $pdt < 15; $pdt++){                            
+                            ?>
+                            <article class="pdt_gallery_item flex-2"> <!-- FLEX-2 SIGNIFICA 2 LINHAS COM 2 ELEMENTOS -->
+                                <a href="#" title=""><img alt="" title="" src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT); ?>.jpg"/></a>
+                                <header class="pdt_gallery_item_desc">
+                                    <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="Calça Moletom Cofort Mama Latina">Calça Moletom Cofort Mama Latina</a></h2>
+                                    <div class="pdt_gallery_item_desc_price">
+                                        <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                    </div>
+                                    <p>2x R$ 29,95</p>
+                                </header>                                
+                            </article>
+                            
+                            <?php
+                            }
+                            ?>                            
+                        </div>                        
+                    </div>
+                        </div>
+                        
+                        <div class="j_tabs_item">
+                            <div class="flex">
+                        <div class="pdt_gallery_list pdt_gallery_featured">
+                            <article class="pdt_gallery_item flex-2"> <!-- FLEX-2 SIGNIFICA 2 LINHAS COM 2 ELEMENTOS -->
+                                <a href="#" title=""><img alt="" title="" src="Uploads/products/09.jpg"/></a>
+                                <header class="pdt_gallery_item_desc">
+                                    <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="Calça Moletom Cofort Mama Latina">Calça Moletom Cofort Mama Latina</a></h2>
+                                    <div class="pdt_gallery_item_desc_price">
+                                        <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                    </div>
+                                    <p>2x R$ 29,95</p>
+                                </header>                                
+                            </article>                            
+                        </div>
+                        <div class="pdt_gallery_list flex">
+                            <?php
+                            $pdt = 0;
+                            for ($pdt = 5; $pdt < 9; $pdt++){                            
+                            ?>
+                            <article class="pdt_gallery_item flex-2"> <!-- FLEX-2 SIGNIFICA 2 LINHAS COM 2 ELEMENTOS -->
+                                <a href="#" title=""><img alt="" title="" src="Uploads/products/<?= str_pad($pdt, 2, 0, STR_PAD_LEFT); ?>.jpg"/></a>
+                                <header class="pdt_gallery_item_desc">
+                                    <h2 class="pdt_gallery_item_desc_title"><a class="transition" href="#" title="Calça Moletom Cofort Mama Latina">Calça Moletom Cofort Mama Latina</a></h2>
+                                    <div class="pdt_gallery_item_desc_price">
+                                        <p><b>R$ 59,90</b> <span>R$ 99,90</span></p>
+                                    </div>
+                                    <p>2x R$ 29,95</p>
+                                </header>                                
+                            </article>
+                            
+                            <?php
+                            }
+                            ?>                            
+                        </div>                        
+                    </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>        

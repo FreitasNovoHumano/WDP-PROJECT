@@ -338,3 +338,44 @@ SEPARA AS DIVES EM TRÊS UMA AO LADO DA OUTRA
     flex-basis: calc(25% - 20px);
     margin: 10px;
 }
+
+/*
+SLIDE
+*/
+.j_slide{
+    position: relative;
+}
+
+.j_slide_item{
+    display: none;
+}
+
+.j_tabs_item:first-child{
+    display: block;
+}
+
+.j_slide_nav{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background: red;
+}
+
+.j_slide_nav span{
+    display: inline-block;
+    background: rgba(0,0,0,0.4);
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.j_slide_nav span:hover,
+.j_slide_nav span.active{
+    background: var(--themeColorA_h);
+}
+
+/*TABS*/
