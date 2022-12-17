@@ -1,5 +1,18 @@
+<?php
+define("BASE", "https://www.localhost/wdp_project");
+define("THEME", "WdpShoes");
+define("THEME_PATH", __DIR__ . "/Themes/" . THEME);
+define("THEME_LINK", BASE . "/Themes/" . THEME);
+
+$configBase = BASE;
+$configUrL = explode("/", strip_tags(filter_input(INPUT_GET, "url". FILTER_UNSAFE_RAW)));
+$configUrl[0] = (!empty($configUrl[0]) ? $configUrl[0] : "index");
+$configThemePath = THEME_PATH;
+$configThemeLink = THEME_LINK;
+$configSiteName = "WdpShoes";
+?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Projeto do Curso / Webdesing em Produção / UpInside Treinamentos">
@@ -21,9 +34,16 @@
     </head>
     <body>
         <?php
-        require './Themes/WdpShoes/header.php';
-        require './Themes/WdpShoes/index.php';
-        require './Themes/WdpShoes/footer.php';
+        //SEARCH
+        echo "";
+        //HEADER
+        require "/{$configThemePath}/header.php";
+        
+        //QUERY STRING
+        
+        
+        //FOOTER
+        require "/{$configThemePath}/footer.php";
 
         ?>       
     </body>
